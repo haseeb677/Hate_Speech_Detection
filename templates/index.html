@@ -1,0 +1,175 @@
+{% extends "base.html" %}
+
+{% block title %}Hate Speech Detection - Home{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card shadow-lg border-0 rounded-lg mt-3">
+            <div class="card-header bg-primary text-white">
+                <h3 class="text-center font-weight-light my-2">
+                    <i class="fas fa-comment-slash me-2"></i>Hate Speech Detection
+                </h3>
+            </div>
+            <div class="card-body">
+                <div id="alert-container">
+                    <div class="alert alert-info" role="alert">
+                        <i class="fas fa-info-circle me-2"></i>
+                        Enter text to analyze for hate speech. Our AI model will classify it and provide a confidence score.
+                    </div>
+                </div>
+                
+                <form id="detection-form">
+                    <div class="mb-3">
+                        <label for="text-input" class="form-label">Text to Analyze:</label>
+                        <textarea class="form-control" id="text-input" rows="5" placeholder="Enter text here..."></textarea>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary" id="analyze-btn">
+                            <i class="fas fa-search me-2"></i>Analyze Text
+                        </button>
+                    </div>
+                </form>
+                
+                <div id="result-container" class="mt-4 d-none">
+                    <div class="card">
+                        <div class="card-header" id="result-header">
+                            <h5 class="mb-0" id="result-title">Analysis Result</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p><strong>Classification:</strong> <span id="result-classification"></span></p>
+                                    <p><strong>Confidence:</strong> <span id="result-confidence"></span></p>
+                                    <p><strong>Preprocessed Text:</strong> <span id="result-preprocessed"></span></p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div id="result-icon" class="display-1 mb-3"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-3">
+                                <p>Was this prediction correct?</p>
+                                <div class="btn-group" role="group">
+                                    <button type="button" class="btn btn-success" id="feedback-correct">
+                                        <i class="fas fa-thumbs-up me-1"></i> Yes
+                                    </button>
+                                    <button type="button" class="btn btn-danger" id="feedback-incorrect">
+                                        <i class="fas fa-thumbs-down me-1"></i> No
+                                    </button>
+                                </div>
+                                <div id="feedback-thanks" class="alert alert-success mt-2 d-none">
+                                    Thank you for your feedback!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    $(document).ready(function() {
+        // Handle form submission
+        $('#detection-form').submit(function(e) {
+            e.preventDefault();
+            
+            const text = $('#text-input').val().trim();
+            if (!text) {
+                alert('Please enter some text to analyze.');
+                return;
+            }
+            
+            // Show loading state
+            $('#analyze-btn').html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Analyzing...');
+            $('#analyze-btn').prop('disabled', true);
+            
+            // Make API request
+            $.ajax({
+                url: '/predict',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ text: text }),
+                success: function(response) {
+                    // Reset button state
+                    $('#analyze-btn').html('<i class="fas fa-search me-2"></i>Analyze Text');
+                    $('#analyze-btn').prop('disabled', false);
+                    
+                    // Display the result
+                    $('#result-classification').text(response.prediction);
+                    
+                    // Format probability as percentage if available
+                    if (response.probability !== null) {
+                        $('#result-confidence').text((response.probability * 100).toFixed(2) + '%');
+                    } else {
+                        $('#result-confidence').text('N/A');
+                    }
+                    
+                    $('#result-preprocessed').text(response.preprocessed_text);
+                    
+                    // Set appropriate styling based on prediction
+                    if (response.prediction === 'Hate Speech') {
+                        $('#result-header').removeClass('bg-success').addClass('bg-danger text-white');
+                        $('#result-title').text('Hate Speech Detected');
+                        $('#result-icon').html('<i class="fas fa-exclamation-triangle text-danger"></i>');
+                    } else {
+                        $('#result-header').removeClass('bg-danger').addClass('bg-success text-white');
+                        $('#result-title').text('No Hate Speech Detected');
+                        $('#result-icon').html('<i class="fas fa-check-circle text-success"></i>');
+                    }
+                    
+                    // Show the result container
+                    $('#result-container').removeClass('d-none');
+                    $('#feedback-thanks').addClass('d-none');
+                    
+                    // Scroll to the result
+                    $('html, body').animate({
+                        scrollTop: $('#result-container').offset().top - 100
+                    }, 500);
+                },
+                error: function(xhr) {
+                    // Reset button state
+                    $('#analyze-btn').html('<i class="fas fa-search me-2"></i>Analyze Text');
+                    $('#analyze-btn').prop('disabled', false);
+                    
+                    // Show error message
+                    alert('Error: ' + (xhr.responseJSON?.error || 'Failed to analyze text'));
+                }
+            });
+        });
+        
+        // Handle feedback buttons
+        $('#feedback-correct, #feedback-incorrect').click(function() {
+            const isCorrect = $(this).attr('id') === 'feedback-correct';
+            const text = $('#text-input').val().trim();
+            const prediction = $('#result-classification').text();
+            
+            // Send feedback to the server
+            $.ajax({
+                url: '/feedback',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    text: text,
+                    prediction: prediction,
+                    correct: isCorrect
+                }),
+                success: function() {
+                    // Show thank you message
+                    $('#feedback-thanks').removeClass('d-none');
+                    
+                    // Disable feedback buttons
+                    $('#feedback-correct, #feedback-incorrect').prop('disabled', true);
+                },
+                error: function() {
+                    alert('Failed to submit feedback. Please try again.');
+                }
+            });
+        });
+    });
+</script>
+{% endblock %}

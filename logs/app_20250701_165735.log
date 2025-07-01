@@ -1,0 +1,11 @@
+2025-07-01 16:57:35,194 - __main__ - INFO - Starting script execution
+2025-07-01 16:57:35,204 - __main__ - INFO - Python version: 3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]
+2025-07-01 16:57:35,237 - __main__ - INFO - Current working directory: C:\Users\Haseeb Ali\OneDrive\Documents\HateSpeechDetection
+2025-07-01 16:57:35,238 - __main__ - INFO - System path: ['C:\\Users\\Haseeb Ali\\OneDrive\\Documents\\HateSpeechDetection', 'C:\\Python313\\python313.zip', 'C:\\Python313\\DLLs', 'C:\\Python313\\Lib', 'C:\\Python313', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages\\win32', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages\\win32\\lib', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages\\Pythonwin', 'C:\\Python313\\Lib\\site-packages', 'C:\\Users\\Haseeb Ali\\OneDrive\\Documents\\HateSpeechDetection']
+2025-07-01 16:57:35,240 - __main__ - INFO - Attempting to import app module
+2025-07-01 16:57:39,248 - matplotlib - DEBUG - matplotlib data path: C:\Users\Haseeb Ali\AppData\Roaming\Python\Python313\site-packages\matplotlib\mpl-data
+2025-07-01 16:57:39,258 - matplotlib - DEBUG - CONFIGDIR=C:\Users\Haseeb Ali\.matplotlib
+2025-07-01 16:57:39,261 - matplotlib - DEBUG - interactive is False
+2025-07-01 16:57:39,261 - matplotlib - DEBUG - platform is win32
+2025-07-01 16:57:39,385 - matplotlib - DEBUG - CACHEDIR=C:\Users\Haseeb Ali\.matplotlib
+2025-07-01 16:57:39,391 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\Haseeb Ali\.matplotlib\fontlist-v390.json

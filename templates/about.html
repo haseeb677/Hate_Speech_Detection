@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+
+{% block title %}Hate Speech Detection - About{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card shadow-lg border-0 rounded-lg mt-3">
+            <div class="card-header bg-primary text-white">
+                <h3 class="text-center font-weight-light my-2">
+                    <i class="fas fa-info-circle me-2"></i>About This Project
+                </h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4>Hate Speech Detection</h4>
+                        <p class="lead">
+                            This application uses machine learning to detect and classify hate speech in text content.
+                        </p>
+                        
+                        <h5 class="mt-4">How It Works</h5>
+                        <p>
+                            Our system processes text through several stages:
+                        </p>
+                        <ol class="list-group list-group-numbered mb-4">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Text Preprocessing</div>
+                                    Cleaning and normalizing text by removing special characters, links, and stopwords
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Feature Engineering</div>
+                                    Converting text into numerical features using techniques like TF-IDF or word embeddings
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Classification</div>
+                                    Using a trained machine learning model to predict whether the text contains hate speech
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Feedback Collection</div>
+                                    Gathering user feedback to continuously improve the model
+                                </div>
+                            </li>
+                        </ol>
+                        
+                        <h5>Technologies Used</h5>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <h6>Backend</h6>
+                                <ul class="list-group mb-3">
+                                    <li class="list-group-item">Python</li>
+                                    <li class="list-group-item">Flask</li>
+                                    <li class="list-group-item">Scikit-learn</li>
+                                    <li class="list-group-item">NLTK / SpaCy</li>
+                                    <li class="list-group-item">Pandas & NumPy</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Frontend</h6>
+                                <ul class="list-group mb-3">
+                                    <li class="list-group-item">HTML5 & CSS3</li>
+                                    <li class="list-group-item">JavaScript & jQuery</li>
+                                    <li class="list-group-item">Bootstrap 5</li>
+                                    <li class="list-group-item">Chart.js</li>
+                                    <li class="list-group-item">Font Awesome</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-header bg-light">
+                                <h5 class="mb-0">Project Roadmap</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist">
+                                        <button class="nav-link active" id="phase1-tab" data-bs-toggle="pill" data-bs-target="#phase1" type="button" role="tab">Phase 1-3</button>
+                                        <button class="nav-link" id="phase4-tab" data-bs-toggle="pill" data-bs-target="#phase4" type="button" role="tab">Phase 4-6</button>
+                                        <button class="nav-link" id="phase7-tab" data-bs-toggle="pill" data-bs-target="#phase7" type="button" role="tab">Phase 7-9</button>
+                                        <button class="nav-link" id="phase10-tab" data-bs-toggle="pill" data-bs-target="#phase10" type="button" role="tab">Phase 10-12</button>
+                                    </div>
+                                    <div class="tab-content" id="v-pills-tabContent">
+                                        <div class="tab-pane fade show active" id="phase1" role="tabpanel">
+                                            <p><strong>Phase 1:</strong> Define problem and scope</p>
+                                            <p><strong>Phase 2:</strong> Gather and clean data</p>
+                                            <p><strong>Phase 3:</strong> Convert text to numeric features</p>
+                                        </div>
+                                        <div class="tab-pane fade" id="phase4" role="tabpanel">
+                                            <p><strong>Phase 4:</strong> Train ML/DL model</p>
+                                            <p><strong>Phase 5:</strong> Evaluate model with metrics</p>
+                                            <p><strong>Phase 6:</strong> Save trained model and preprocessing tools</p>
+                                        </div>
+                                        <div class="tab-pane fade" id="phase7" role="tabpanel">
+                                            <p><strong>Phase 7:</strong> Build user interface</p>
+                                            <p><strong>Phase 8:</strong> Design frontend UI</p>
+                                            <p><strong>Phase 9:</strong> Integrate model into app</p>
+                                        </div>
+                                        <div class="tab-pane fade" id="phase10" role="tabpanel">
+                                            <p><strong>Phase 10:</strong> Add visualizations</p>
+                                            <p><strong>Phase 11:</strong> Deploy app online</p>
+                                            <p><strong>Phase 12:</strong> Monitor and improve over time</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-header bg-light">
+                                <h5 class="mb-0">Resources</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <a href="https://github.com/yourusername/HateSpeechDetection" target="_blank" rel="noopener" title="GitHub Repository for Hate Speech Detection Project">
+                                            <i class="fab fa-github me-2"></i>GitHub Repository
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="https://scikit-learn.org/" target="_blank" rel="noopener" title="Scikit-learn Documentation">
+                                            <i class="fas fa-book me-2"></i>Scikit-learn Documentation
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="https://flask.palletsprojects.com/" target="_blank" rel="noopener" title="Flask Documentation">
+                                            <i class="fas fa-flask me-2"></i>Flask Documentation
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="https://www.nltk.org/" target="_blank" rel="noopener" title="NLTK Documentation">
+                                            <i class="fas fa-language me-2"></i>NLTK Documentation
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

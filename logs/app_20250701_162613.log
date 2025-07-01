@@ -1,0 +1,5 @@
+2025-07-01 16:26:13,718 - __main__ - INFO - Starting script execution
+2025-07-01 16:26:13,719 - __main__ - INFO - Python version: 3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]
+2025-07-01 16:26:13,719 - __main__ - INFO - Current working directory: C:\Users\Haseeb Ali\OneDrive\Documents\HateSpeechDetection
+2025-07-01 16:26:13,720 - __main__ - INFO - System path: ['C:\\Users\\Haseeb Ali\\OneDrive\\Documents\\HateSpeechDetection', 'C:\\Python313\\python313.zip', 'C:\\Python313\\DLLs', 'C:\\Python313\\Lib', 'C:\\Python313', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages\\win32', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages\\win32\\lib', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages\\Pythonwin', 'C:\\Python313\\Lib\\site-packages', 'C:\\Users\\Haseeb Ali\\OneDrive\\Documents\\HateSpeechDetection']
+2025-07-01 16:26:13,722 - __main__ - INFO - Attempting to import app module

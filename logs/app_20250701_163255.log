@@ -1,0 +1,21 @@
+2025-07-01 16:32:55,189 - __main__ - INFO - Starting script execution
+2025-07-01 16:32:55,190 - __main__ - INFO - Python version: 3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]
+2025-07-01 16:32:55,191 - __main__ - INFO - Current working directory: C:\Users\Haseeb Ali\OneDrive\Documents\HateSpeechDetection
+2025-07-01 16:32:55,193 - __main__ - INFO - System path: ['C:\\Users\\Haseeb Ali\\OneDrive\\Documents\\HateSpeechDetection', 'C:\\Python313\\python313.zip', 'C:\\Python313\\DLLs', 'C:\\Python313\\Lib', 'C:\\Python313', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages\\win32', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages\\win32\\lib', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages\\Pythonwin', 'C:\\Python313\\Lib\\site-packages', 'C:\\Users\\Haseeb Ali\\OneDrive\\Documents\\HateSpeechDetection']
+2025-07-01 16:32:55,195 - __main__ - INFO - Attempting to import app module
+2025-07-01 16:32:59,054 - matplotlib - DEBUG - matplotlib data path: C:\Users\Haseeb Ali\AppData\Roaming\Python\Python313\site-packages\matplotlib\mpl-data
+2025-07-01 16:32:59,068 - matplotlib - DEBUG - CONFIGDIR=C:\Users\Haseeb Ali\.matplotlib
+2025-07-01 16:32:59,072 - matplotlib - DEBUG - interactive is False
+2025-07-01 16:32:59,072 - matplotlib - DEBUG - platform is win32
+2025-07-01 16:32:59,310 - matplotlib - DEBUG - CACHEDIR=C:\Users\Haseeb Ali\.matplotlib
+2025-07-01 16:32:59,321 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\Haseeb Ali\.matplotlib\fontlist-v390.json
+2025-07-01 16:33:20,920 - __main__ - INFO - Successfully imported app module
+2025-07-01 16:33:20,920 - __main__ - INFO - Starting Hate Speech Detection Web Application
+2025-07-01 16:33:20,921 - __main__ - INFO - Model found at models\hate_speech_model.joblib
+2025-07-01 16:33:20,921 - __main__ - INFO - Starting Flask app on port 5000
+2025-07-01 16:33:20,965 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.10:5000
+2025-07-01 16:33:20,967 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-01 16:33:20,971 - werkzeug - INFO -  * Restarting with stat
