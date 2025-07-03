@@ -1,0 +1,49 @@
+2025-07-01 19:05:37,137 - __main__ - INFO - Starting script execution
+2025-07-01 19:05:37,137 - __main__ - INFO - Python version: 3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]
+2025-07-01 19:05:37,137 - __main__ - INFO - Current working directory: C:\Users\Haseeb Ali\OneDrive\Documents\HateSpeechDetection
+2025-07-01 19:05:37,138 - __main__ - INFO - System path: ['C:\\Users\\Haseeb Ali\\OneDrive\\Documents\\HateSpeechDetection', 'C:\\Python313\\python313.zip', 'C:\\Python313\\DLLs', 'C:\\Python313\\Lib', 'C:\\Python313', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages\\win32', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages\\win32\\lib', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages\\Pythonwin', 'C:\\Python313\\Lib\\site-packages', 'C:\\Users\\Haseeb Ali\\OneDrive\\Documents\\HateSpeechDetection']
+2025-07-01 19:05:37,139 - __main__ - INFO - Attempting to import app module
+2025-07-01 19:05:37,174 - __main__ - INFO - Starting script execution
+2025-07-01 19:05:37,174 - __main__ - INFO - Python version: 3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]
+2025-07-01 19:05:37,254 - __main__ - INFO - Current working directory: C:\Users\Haseeb Ali\OneDrive\Documents\HateSpeechDetection
+2025-07-01 19:05:37,254 - __main__ - INFO - System path: ['C:\\Users\\Haseeb Ali\\OneDrive\\Documents\\HateSpeechDetection', 'C:\\Python313\\python313.zip', 'C:\\Python313\\DLLs', 'C:\\Python313\\Lib', 'C:\\Python313', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages\\win32', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages\\win32\\lib', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages\\Pythonwin', 'C:\\Python313\\Lib\\site-packages', 'C:\\Users\\Haseeb Ali\\OneDrive\\Documents\\HateSpeechDetection']
+2025-07-01 19:05:37,255 - __main__ - INFO - Attempting to import app module
+2025-07-01 19:05:44,946 - matplotlib - DEBUG - matplotlib data path: C:\Users\Haseeb Ali\AppData\Roaming\Python\Python313\site-packages\matplotlib\mpl-data
+2025-07-01 19:05:44,946 - matplotlib - DEBUG - matplotlib data path: C:\Users\Haseeb Ali\AppData\Roaming\Python\Python313\site-packages\matplotlib\mpl-data
+2025-07-01 19:05:44,957 - matplotlib - DEBUG - CONFIGDIR=C:\Users\Haseeb Ali\.matplotlib
+2025-07-01 19:05:44,959 - matplotlib - DEBUG - interactive is False
+2025-07-01 19:05:44,960 - matplotlib - DEBUG - platform is win32
+2025-07-01 19:05:45,074 - matplotlib - DEBUG - CONFIGDIR=C:\Users\Haseeb Ali\.matplotlib
+2025-07-01 19:05:45,078 - matplotlib - DEBUG - interactive is False
+2025-07-01 19:05:45,078 - matplotlib - DEBUG - platform is win32
+2025-07-01 19:05:45,102 - matplotlib - DEBUG - CACHEDIR=C:\Users\Haseeb Ali\.matplotlib
+2025-07-01 19:05:45,109 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\Haseeb Ali\.matplotlib\fontlist-v390.json
+2025-07-01 19:05:45,192 - matplotlib - DEBUG - CACHEDIR=C:\Users\Haseeb Ali\.matplotlib
+2025-07-01 19:05:45,197 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\Haseeb Ali\.matplotlib\fontlist-v390.json
+2025-07-01 19:06:20,671 - __main__ - INFO - Successfully imported app module
+2025-07-01 19:06:20,672 - __main__ - INFO - Starting Hate Speech Detection Web Application
+2025-07-01 19:06:20,673 - __main__ - INFO - Model found at models\hate_speech_model.joblib
+2025-07-01 19:06:20,673 - __main__ - INFO - Starting Flask app on port 5000
+2025-07-01 19:06:20,699 - werkzeug - WARNING -  * Debugger is active!
+2025-07-01 19:06:20,706 - werkzeug - INFO -  * Debugger PIN: 246-152-769
+2025-07-01 19:07:08,133 - __main__ - INFO - Successfully imported app module
+2025-07-01 19:07:08,226 - __main__ - INFO - Starting Hate Speech Detection Web Application
+2025-07-01 19:07:08,227 - __main__ - INFO - Model found at models\hate_speech_model.joblib
+2025-07-01 19:07:08,260 - __main__ - INFO - Starting Flask app on port 5000
+2025-07-01 19:07:08,675 - werkzeug - WARNING -  * Debugger is active!
+2025-07-01 19:07:08,725 - werkzeug - INFO -  * Debugger PIN: 246-152-769
+2025-07-01 19:07:37,603 - werkzeug - INFO - 192.168.1.10 - - [01/Jul/2025 19:07:37] "GET / HTTP/1.1" 200 -
+2025-07-01 19:07:49,737 - werkzeug - INFO - 192.168.1.10 - - [01/Jul/2025 19:07:49] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-07-01 19:07:49,738 - werkzeug - INFO - 192.168.1.10 - - [01/Jul/2025 19:07:49] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-07-01 19:08:16,978 - werkzeug - INFO - 192.168.1.10 - - [01/Jul/2025 19:08:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-01 19:08:37,748 - werkzeug - INFO - 192.168.1.10 - - [01/Jul/2025 19:08:37] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-07-01 19:08:51,757 - werkzeug - INFO - 192.168.1.10 - - [01/Jul/2025 19:08:51] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-07-01 19:09:22,848 - werkzeug - INFO - 192.168.1.10 - - [01/Jul/2025 19:09:22] "[35m[1mGET /visualize HTTP/1.1[0m" 500 -
+2025-07-01 19:09:30,920 - werkzeug - INFO - 192.168.1.10 - - [01/Jul/2025 19:09:30] "GET /visualize?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-01 19:09:32,005 - werkzeug - INFO - 192.168.1.10 - - [01/Jul/2025 19:09:32] "GET /visualize?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-01 19:09:33,195 - werkzeug - INFO - 192.168.1.10 - - [01/Jul/2025 19:09:33] "GET /visualize?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-01 19:09:44,957 - werkzeug - INFO - 192.168.1.10 - - [01/Jul/2025 19:09:44] "GET /about HTTP/1.1" 200 -
+2025-07-01 19:09:45,730 - werkzeug - INFO - 192.168.1.10 - - [01/Jul/2025 19:09:45] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-07-01 19:09:45,730 - werkzeug - INFO - 192.168.1.10 - - [01/Jul/2025 19:09:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-07-01 19:10:58,323 - werkzeug - INFO - 192.168.1.10 - - [01/Jul/2025 19:10:58] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-07-01 19:41:53,602 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Haseeb Ali\\OneDrive\\Documents\\HateSpeechDetection\\src\\preprocessing\\text_preprocessing.py', reloading

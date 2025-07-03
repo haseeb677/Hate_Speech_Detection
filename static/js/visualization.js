@@ -23,23 +23,20 @@ function loadWordCloud() {
     if (!wordcloudContainer) return;
     
     // Show loading spinner
-    wordcloudContainer.innerHTML = '<div class="text-center py-5"><div class="loading-spinner"></div><p class="mt-3">Generating word cloud...</p></div>';
+    wordcloudContainer.innerHTML = '<div class="text-center py-5"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p class="mt-3">Generating word cloud...</p></div>';
     
     // Fetch word cloud image
-    fetch('/generate_wordcloud')
+    fetch('/get_wordcloud')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-            return response.blob();
+            return response.json();
         })
-        .then(blob => {
-            // Create image URL
-            const imageUrl = URL.createObjectURL(blob);
-            
-            // Create image element
+        .then(data => {
+            // Create image from base64 data
             const img = document.createElement('img');
-            img.src = imageUrl;
+            img.src = 'data:image/png;base64,' + data.image;
             img.alt = 'Word Cloud of Hate Speech Terms';
             img.className = 'img-fluid rounded';
             

@@ -1,0 +1,18 @@
+2025-07-01 20:29:05,669 - __main__ - INFO - Starting script execution
+2025-07-01 20:29:05,670 - __main__ - INFO - Python version: 3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]
+2025-07-01 20:29:05,685 - __main__ - INFO - Current working directory: C:\Users\Haseeb Ali\OneDrive\Documents\HateSpeechDetection
+2025-07-01 20:29:05,685 - __main__ - INFO - System path: ['C:\\Users\\Haseeb Ali\\OneDrive\\Documents\\HateSpeechDetection', 'C:\\Python313\\python313.zip', 'C:\\Python313\\DLLs', 'C:\\Python313\\Lib', 'C:\\Python313', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages\\win32', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages\\win32\\lib', 'C:\\Users\\Haseeb Ali\\AppData\\Roaming\\Python\\Python313\\site-packages\\Pythonwin', 'C:\\Python313\\Lib\\site-packages', 'C:\\Users\\Haseeb Ali\\OneDrive\\Documents\\HateSpeechDetection']
+2025-07-01 20:29:05,687 - __main__ - INFO - Attempting to import app module
+2025-07-01 20:29:21,096 - matplotlib - DEBUG - matplotlib data path: C:\Users\Haseeb Ali\AppData\Roaming\Python\Python313\site-packages\matplotlib\mpl-data
+2025-07-01 20:29:21,165 - matplotlib - DEBUG - CONFIGDIR=C:\Users\Haseeb Ali\.matplotlib
+2025-07-01 20:29:21,168 - matplotlib - DEBUG - interactive is False
+2025-07-01 20:29:21,169 - matplotlib - DEBUG - platform is win32
+2025-07-01 20:29:21,313 - matplotlib - DEBUG - CACHEDIR=C:\Users\Haseeb Ali\.matplotlib
+2025-07-01 20:29:21,371 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\Haseeb Ali\.matplotlib\fontlist-v390.json
+2025-07-01 20:30:33,066 - __main__ - INFO - Successfully imported app module
+2025-07-01 20:30:33,066 - __main__ - INFO - Starting Hate Speech Detection Web Application
+2025-07-01 20:30:33,141 - __main__ - INFO - Model found at models\hate_speech_model.joblib
+2025-07-01 20:30:33,142 - __main__ - INFO - Starting Flask app on port 5000
+2025-07-01 20:30:33,241 - werkzeug - WARNING -  * Debugger is active!
+2025-07-01 20:30:33,249 - werkzeug - INFO -  * Debugger PIN: 246-152-769
+2025-07-01 20:32:20,720 - werkzeug - INFO - 192.168.1.10 - - [01/Jul/2025 20:32:20] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -

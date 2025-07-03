@@ -20,6 +20,12 @@ try:
     nltk.data.find('corpora/wordnet')
 except LookupError:
     nltk.download('wordnet')
+    
+# Fix the punkt_tab resource download
+try:
+    nltk.data.find('tokenizers/punkt_tab')
+except LookupError:
+    nltk.download('punkt_tab')
 
 class TextPreprocessor:
     """
