@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Hate Speech Detection Application
 
 This application detects and classifies whether a given text contains hate speech or is non-offensive.
@@ -76,3 +77,6 @@ Then open your browser and navigate to `http://localhost:5000`.
 ## License
 
 MIT
+=======
+# Hate_Speech_Detection
+>>>>>>> ef1087270d23d7ef53af4cee5450718d3ba51c18
